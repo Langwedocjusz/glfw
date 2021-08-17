@@ -34,7 +34,7 @@ project "GLFW"
         "src/osmesa_context.c"
     }
 
-    staticruntime "on"
+    staticruntime "off"
     systemversion "latest"
 
     defines {
@@ -43,10 +43,10 @@ project "GLFW"
     }
 
     filter "configurations:Debug"
-        buildoptions "/MTd"
+        symbols "on"
 
 	filter "configurations:Release"
-         buildoptions "/MT"
+        optimize "on"
 
     filter "configurations:Distribution"
-        buildoptions "/MT"
+        optimize "on"
