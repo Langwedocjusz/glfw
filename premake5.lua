@@ -34,7 +34,7 @@ project "GLFW"
         "src/osmesa_context.c"
     }
 
-    staticruntime "off"
+    staticruntime "on"
     systemversion "latest"
 
     defines {
